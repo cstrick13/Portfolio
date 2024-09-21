@@ -1,17 +1,19 @@
 import React from 'react';
 import './Home.css';
+import images from '../assets/image';
 function Home() {
   return (
-    <section id="home" className="hero-section">
-      <div className="hero">
-        <h1>Welcome to Cory's Portfolio</h1>
-        <p>Your go-to source for all things tech.</p>
-        <a href="#about" className="cta-button">Learn More</a>
+    <main>
+    <div className="container">
+      <img src={images.cutie} className="image"alt="" />
+      <div className="hero-text">
+        <h1>Cory Strickland</h1>
+        <p>Developer<span>Student</span>Imagineer
+        </p>
+        <button>Order Now</button>
       </div>
-      <div className="hero-description">
-        <p>With years of experience in frontend development, I specialize in crafting interactive and responsive web applications. Let’s build something amazing together!</p>
-      </div>
-    </section>
+    </div>
+  </main>
   );
 }
 
